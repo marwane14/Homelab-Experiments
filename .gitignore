@@ -205,3 +205,34 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- Cyber & Home Lab Specific ---
+# Ne jamais push de clés privées
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# Ne pas push de captures d'écran brutes si elles sont lourdes (on les gère manuellement)
+*.png
+*.jpg
+*.jpeg
+# Note : Si tu veux mettre des images dans tes README, crée un dossier /assets 
+# et n'ignore que les fichiers à la racine.
+
+# Fichiers de configuration sensibles
+*.ovpn
+*.conf
+config.xml
+
+# Logs de scans (Nmap, Wireshark) - Souvent trop lourds ou sensibles
+*.pcap
+*.pcapng
+*.nmap
+*.gnmap
+
+# Virtualisation
+*.iso
+*.vmdk
+*.vdi
+*.qcow2
