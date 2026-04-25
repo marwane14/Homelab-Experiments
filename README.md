@@ -21,7 +21,7 @@ My setup combines dedicated physical hardware and a virtualized stack for networ
 ---
 
 ## 📂 Project Structure
-* `infrastructure/`: Network diagrams, OPNsense/pfSense configs, and Proxmox setups.
+* `infrastructure/`: Network diagrams, OPNsense configs, and Proxmox setups.
 * `writeups/`: Documentation of CTF challenges, exploit analysis, and security tests.
 * `scripts/`: Automation tools developed in **Python** and **Bash**.
 
