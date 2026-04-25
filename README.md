@@ -9,13 +9,13 @@ This repository documents my hands-on cybersecurity research, CTF walkthroughs, 
 My setup combines dedicated physical hardware and a virtualized stack for network isolation and realistic traffic analysis.
 
 ### Hardware Layer
-* **Firewall (Edge):** Protectli Vault (Physical) – Handles network segmentation, IDS/IPS, and edge security.
+* **Firewall :** Protectli Vault (Physical) – Handles network segmentation, IDS/IPS, and edge security.
 * **Switching:** Managed Switch for VLAN tagging and physical device isolation.
 * **Compute:** Dedicated Mini-PC running **Proxmox VE**.
 
 ### Virtualization Layer (Proxmox)
 * **Offensive:** Kali Linux, Parrot OS.
-* **Infrastructure:** Active Directory (Windows Server), Linux Servers (Debian/Arch), Docker.
+* **Infrastructure:** Active Directory, Linux Servers, Docker.
 * **Targets:** Vulnerable machines, CTF environments.
 
 ---
