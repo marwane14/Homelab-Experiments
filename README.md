@@ -16,7 +16,7 @@ My setup combines dedicated physical hardware and a virtualized stack for networ
 ### Virtualization Layer (Proxmox)
 * **Offensive:** Kali Linux, Parrot OS.
 * **Infrastructure:** Active Directory (Windows Server), Linux Servers (Debian/Arch), Docker.
-* **Targets:** Vulnerable machines (VulnHub, Metasploitable), CTF environments.
+* **Targets:** Vulnerable machines, CTF environments.
 
 ---
 
