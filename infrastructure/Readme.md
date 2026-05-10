@@ -1,26 +1,26 @@
-# 🏗️ Infrastructure & Network Architecture
+# 🏗️ Infrastructure Overview
 
-## 📋 Overview
-This directory serves as the technical blueprint for the Homelab. It contains all network topology diagrams, hypervisor configurations, and edge firewall rules required to deploy, maintain, and rebuild the environment.
+## 🎯 Purpose
+This section documents the foundational layers of the Homelab environment. The primary goal is to provide a stable, secure, and reproducible platform for cybersecurity research and network testing.
 
-## 🕸️ Network Topology & Segmentation
-The network is strictly segmented using an OPNsense physical firewall and a managed switch, ensuring isolation between production endpoints and vulnerable targets.
+## 🧱 Core Components
 
-### VLAN Configuration
-* **VLAN 01 (`VLAN_SERVEURS`):** Dedicated to the Proxmox VE hypervisor and its virtual machines (Attack boxes, CTF targets, Infrastructure servers). Subnet: `192.168.10.0/24`
-* **VLAN 02 (`VLAN_PERSONNEL`):** Dedicated to trusted personal devices (e.g., Arch Linux host). Subnet: `192.168.20.0/24`
+### 1. Physical Layer (Edge Security)
+* **Perimeter Firewall:** A dedicated physical appliance (Protectli Vault) running OPNsense for advanced routing, firewalling, and IDS/IPS capabilities.
+* **Switching:** Managed hardware allowing for physical device isolation and IEEE 802.1Q VLAN tagging.
 
-*Traffic between VLANs is heavily restricted and inspected by the OPNsense Intrusion Prevention System (IPS).*
+### 2. Virtualization Layer (Compute)
+* **Hypervisor:** Proxmox VE running on a dedicated node.
+* **Role:** Orchestrates the deployment of offensive tools, defensive monitors, and vulnerable targets in a controlled environment.
 
-## 📂 Directory Contents
-
-### `/networks`
-* **`network-diagram.png`**: Visual representation of the physical and logical data flow.
-* **`opnsense/`**: Sanitized firewall rules, NAT configurations, and VLAN definitions.
-
-### `/proxmox-configs`
-* **`interfaces.txt`**: Host network configuration (Linux Bridges and VLAN tagging).
-* **Hardware Specs:** Dedicated Mini-PC compute node documentation.
+## 🕸️ Network Strategy
+The infrastructure relies on **Strict Segmentation**. Instead of a single flat network, the environment is divided into distinct security zones (VLANs) based on trust levels:
+* **Management & Trusted:** For hypervisor control and personal administrative devices.
+* **Lab & Research:** For experimental VMs, CTF targets, and potentially unsafe traffic.
 
 ---
-> 🔒 **Security Note:** All exported configuration files in this directory are sanitized. No plaintext credentials, private keys, or public IP addresses are stored in this repository.
+## 📂 Documentation & Assets
+* **[Networks/](./networks/):** Detailed topology diagrams and firewall logic.
+* **[Proxmox-Configs/](./proxmox-configs/):** Hypervisor network bridge settings and hardware specs.
+
+> *Refer to the [Network Diagram](./networks/network-diagram.png) for specific addressing and VLAN mapping.*
