@@ -213,12 +213,15 @@ __marimo__/
 id_rsa*
 id_ed25519*
 
-# Ne pas push de captures d'écran brutes si elles sont lourdes (on les gère manuellement)
+# Ne pas push de captures d'écran brutes si elles sont lourdes
 *.png
 *.jpg
 *.jpeg
-# Note : Si tu veux mettre des images dans tes README, crée un dossier /assets 
-# et n'ignore que les fichiers à la racine.
+
+# EXCEPTIONS : Autoriser les images utiles dans les bons dossiers
+!infrastructure/networks/*.png
+!writeups/**/assets/*.png
+!writeups/**/assets/*.jpg
 
 # Fichiers de configuration sensibles
 *.ovpn
