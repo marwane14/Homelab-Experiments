@@ -1,33 +1,58 @@
 # 🛡️ Homelab & Cybersecurity Research Environment
 
-## Overview
-This repository documents my hands-on cybersecurity research, CTF walkthroughs, and infrastructure testing. I use this hybrid environment to simulate real-world attack scenarios and master defensive configurations.
+
+## 🎯 Overview
+
+This repository serves as the operational blueprint and research log for a hybrid cybersecurity homelab. Designed to bridge the gap between theoretical concepts and practical execution, this environment is built to simulate real-world attack vectors, engineer robust defensive architectures, and validate security postures through continuous testing.
+
 
 ---
 
-## 🏗️ The Lab Architecture
-My setup combines dedicated physical hardware and a virtualized stack for network isolation and realistic traffic analysis.
 
-### Hardware Layer
-* **Firewall :** Protectli Vault (Physical) – Handles network segmentation, IDS/IPS, and edge security.
-* **Switching:** Managed Switch for VLAN tagging and physical device isolation.
-* **Compute:** Dedicated Mini-PC running **Proxmox VE**.
+## 🏗️ Architecture & Stack
 
-### Virtualization Layer (Proxmox)
-* **Offensive:** Kali Linux, Parrot OS.
-* **Infrastructure:** Active Directory, Linux Servers, Docker.
-* **Targets:** Vulnerable machines, CTF environments.
+The infrastructure enforces a strict Zero Trust network model, leveraging a combination of bare-metal appliances and virtualized environments to ensure complete isolation and high-fidelity traffic analysis.
+
+
+### Edge & Physical Layer
+
+* **Perimeter Security:** Protectli Vault running OPNsense (IDS/IPS, deep packet inspection, and stateful firewalling).
+
+* **Network Segmentation:** 802.1Q VLAN tagging via a managed switch for isolated operational zones.
+
+* **Compute Node:** Dedicated bare-metal hypervisor (Proxmox VE) optimized for secure, isolated workload execution.
+
+
+### Virtualized Operations
+
+* **Offensive Operations:** Kali Linux and custom attack environments.
+
+* **Enterprise Infrastructure:** Active Directory domains, Linux server deployments, and containerized services (Docker).
+
+* **Testing Grounds:** Ephemeral vulnerable targets and CTF simulation environments.
+
 
 ---
 
-## 📂 Project Structure
-* `infrastructure/`: Network diagrams, OPNsense configs, and Proxmox setups.
-* `writeups/`: Documentation of CTF challenges, exploit analysis, and security tests.
-* `scripts/`: Automation tools developed in **Python** and **Bash**.
+
+## 📂 Repository Navigation
+
+* 🕸️ **[`/infrastructure`](./infrastructure/)**: Network topology diagrams, firewall routing logic, and hypervisor resource allocation strategies.
+
+* 📝 **[`/writeups`](./writeups/)**: Post-mortem reports on vulnerability exploitation, CTF methodologies, and defensive tuning.
+
+* ⌨️ **[`/scripts`](./scripts/)**: Custom Python and Bash utilities for environment automation, log parsing, and security tooling.
+
+* 🎨 **[`/assets`](./assets/)**: Centralized media storage, topology diagrams, and documentation graphics.
+
 
 ---
 
-## 🎯 Core Objectives
-* **Advanced Reconnaissance:** Deep-dive analysis of network protocols and service discovery.
-* **CTF & Exploitation:** Documenting methodologies for various capture-the-flag challenges.
-* **Defensive Hardening:** Implementing and testing security policies on physical and virtual assets.
+
+## 🚀 Strategic Objectives
+
+* **Offensive Engineering:** Execute advanced reconnaissance, map attack surfaces, and develop reliable exploitation methodologies.
+
+* **Defensive Hardening:** Design strictly segmented networks, tune intrusion detection systems, and implement robust access controls.
+
+* **Continuous Automation:** Streamline lab provisioning and operationalize security monitoring routines.
