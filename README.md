@@ -1,7 +1,7 @@
 # 🛡️ Homelab & Cybersecurity Research Environment
 
 
-## 🎯 Overview
+## Overview
 
 This repository serves as the operational blueprint and research log for a hybrid cybersecurity homelab. Designed to bridge the gap between theoretical concepts and practical execution, this environment is built to simulate real-world attack vectors, engineer robust defensive architectures, and validate security postures through continuous testing.
 
@@ -35,7 +35,7 @@ The infrastructure enforces a strict Zero Trust network model, leveraging a comb
 ---
 
 
-## 📂 Repository Navigation
+## Repository Navigation
 
 * 🕸️ **[`/infrastructure`](./infrastructure/)**: Network topology diagrams, firewall routing logic, and hypervisor resource allocation strategies.
 
@@ -49,7 +49,7 @@ The infrastructure enforces a strict Zero Trust network model, leveraging a comb
 ---
 
 
-## 🚀 Strategic Objectives
+## Strategic Objectives
 
 * **Offensive Engineering:** Execute advanced reconnaissance, map attack surfaces, and develop reliable exploitation methodologies.
 

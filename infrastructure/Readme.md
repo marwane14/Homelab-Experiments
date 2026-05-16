@@ -1,9 +1,9 @@
 # 🏗️ Infrastructure Overview
 
-## 🎯 Purpose
+## Purpose
 This section documents the foundational layers of the Homelab environment. The primary goal is to provide a stable, secure, and reproducible platform for cybersecurity research and network testing.
 
-## 🧱 Core Components
+## Core Components
 
 ### 1. Physical Layer (Edge Security)
 * **Perimeter Firewall:** A dedicated physical appliance (Protectli Vault) running OPNsense for advanced routing, firewalling, and IDS/IPS capabilities.
@@ -13,7 +13,7 @@ This section documents the foundational layers of the Homelab environment. The p
 * **Hypervisor:** Proxmox VE running on a dedicated node.
 * **Role:** Orchestrates the deployment of offensive tools, defensive monitors, and vulnerable targets in a controlled environment.
 
-## 🕸️ Network Strategy
+## Network Strategy
 The infrastructure relies on **Strict Segmentation**. Instead of a single flat network, the environment is divided into distinct security zones (VLANs) based on trust levels:
 * **Management & Trusted:** For hypervisor control and personal administrative devices.
 * **Lab & Research:** For experimental VMs, CTF targets, and potentially unsafe traffic.

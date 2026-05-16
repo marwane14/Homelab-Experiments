@@ -1,9 +1,9 @@
 # 🎨 Documentation Assets & Media
 
-## 📋 Overview
+## Overview
 This directory is the centralized storage for static visual resources, network diagrams, architecture schemes, and media assets used across the repository's documentation. 
 
-## 📌 Media Guidelines
+## Media Guidelines
 To maintain a professional, fast-loading, and clean repository, all uploaded media must adhere to the following standards:
 
 1. **Optimization & Scaling:** Images and screenshots must be compressed/resized before being committed to prevent repository bloat (recommended formats: optimized `.png` or `.jpg`).
