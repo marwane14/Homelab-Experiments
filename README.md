@@ -9,7 +9,7 @@ This repository serves as the operational blueprint and research log for a hybri
 ---
 
 
-## 🏗️ Architecture & Stack
+## Architecture & Stack
 
 The infrastructure enforces a strict Zero Trust network model, leveraging a combination of bare-metal appliances and virtualized environments to ensure complete isolation and high-fidelity traffic analysis.
 
