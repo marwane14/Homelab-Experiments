@@ -21,14 +21,15 @@ Establish rigid network segmentation via VLANs to isolate the Proxmox hypervisor
 
 ## 3. Methodology & Execution
 
-1. Configured 802.1Q VLAN tagging on the managed switch to logically separate the network into two distinct VLANs.
-2. Provisioned corresponding VLAN interfaces within the OPNsense routing table.
-3. Enabled OPNsense Next-Gen KEA DHCPv4 server for IP assignment on the newly created VLANs.
-4. Diagnosed DHCP failure (clients failing to receive IP leases).
-5. Ping and finding the issue (OPNSENSE fault).
-6. Disabled KEA DHCPv4 and reverted to the legacy ISC DHCPv4 service.
-7. Assigned static routing policies to grant the Main PC exclusive administrative access to the Proxmox management interface.
-8. Prepared external access architecture (Domain Name acquired) for future secure reverse proxy / VPN deployment.
+Methodology & Execution
+* Configured 802.1Q VLAN tagging on the managed switch to logically separate the network into two distinct VLANs.
+* Provisioned corresponding VLAN interfaces within the OPNsense routing table.
+* Enabled OPNsense Next-Gen KEA DHCPv4 server for IP assignment on the newly created VLANs.
+* Diagnosed DHCP failure (clients failing to receive IP leases).
+* Executed ICMP connectivity tests (ping) across VLAN interfaces to isolate the failure to the OPNsense core network services.
+* Disabled KEA DHCPv4 and reverted to the legacy ISC DHCPv4 service.
+* Assigned static routing policies to grant the Main PC exclusive administrative access to the Proxmox management interface.
+* Prepared external access architecture (Domain Name acquired) for future secure reverse proxy / VPN deployment.
 
 ## 4. Results & Artifacts
 
