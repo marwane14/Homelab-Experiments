@@ -1,6 +1,6 @@
 cat << 'EOF' > wireguard_implementation_draft.md
 # Project: WireGuard VPN Implementation
-**Date:** July 5, 2026 | **Category:** Network Security / Remote Access | **MITRE Tactic:** T1133 (External Remote Services) / T1572 (Protocol Tunneling)
+**Date:** July 5, 2026 | **Category:** Network Security / Remote Access 
 
 ## 1. Objective
 Establish a secure point-to-point WireGuard tunnel between a mobile workstation (laptop) and the homelab infrastructure to ensure maximum communication security and encrypted remote access. This document serves as the initial planning phase prior to hardware delivery and deployment.
