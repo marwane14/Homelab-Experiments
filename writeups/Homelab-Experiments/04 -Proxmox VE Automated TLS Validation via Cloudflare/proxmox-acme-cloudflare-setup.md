@@ -4,7 +4,7 @@ Design and implement an automated Public Key Infrastructure (PKI) TLS/SSL certif
 
 ---
 
-# 🛠 2. Environment & Tools
+# 2. Environment & Tools
 
 * **Virtualization Host:** Proxmox VE 8.x (`192.168.10.10:8006`)
 * **Security Gateway / Edge Resolver:** OPNsense Firewall (`192.168.10.1`)
