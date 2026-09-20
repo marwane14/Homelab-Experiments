@@ -11,8 +11,6 @@ Design and implement an automated Public Key Infrastructure (PKI) TLS/SSL certif
 * **Authoritative DNS Infrastructure:** Cloudflare Nameservers (`ridge.ns.cloudflare.com`, `stephane.ns.cloudflare.com`)
 * **Domain Registrar:** OVH (NS Delegation to Cloudflare)
 * **PKI / Certificate Authority:** Let's Encrypt ACME Engine
-* **IaC & Orchestration Engine:** HashiCorp Terraform (Proxmox Telmate/bpg Provider)
-* **Authentication Vector:** Scoped Cloudflare REST API Bearer Token
 
 ---
 
